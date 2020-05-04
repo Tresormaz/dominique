@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto|Ubuntu&display=swap');
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto';
+}
+/*--- Main Navbar----*/
+.navbar-brand{
+    font-family: 'pacifico';
+    font-size: 35px;
+    color: lightcoral !important;
+}
+
+.nav-link{
+    font-size: 16px;
+    margin: 15px;
+    color: black !important;
+    font-family: 'Roboto condensed';
+}
+
+.nav-link:hover{
+    color:#00E8E8 !important;
+} 
+.active .nav-link{
+    color:#00E8E8 !important;
+}
+
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+}
+.menu-right-btn:hover{
+    background-color:#00E8E8 !important ;
+    color: white;
+} 
+.navbar.scroll{
+    background: rgb(222,192,222);
+    transition: background 1s;
+}
+/*-============== Main Navbar----*/
+
+/*--- Main Section ----*/
+.site-content{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.9)), url(../img/bckgr3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    position: relative;
+    
+}
+.site-title, .site-desc{
+    color: white;
+    font-family: 'Righteous';
+}
+.site-title{
+    margin-top: 30%;
+    margin-bottom: 6%;
+    font-size: 50px;
+}
+.site-desc{
+    font-size:14px;
+    padding: 5%;
+}
+
+.site-btn1{
+    margin-left: 20%;
+    background-color: black;
+    color: white;
+}
+.site-btn2{
+    background-color: white;
+}
+.site-btn1, .site-btn2{
+   
+    margin-bottom: 20%;
+}/*================*/
+
+/*-------- header-Link Arrow-down Button-----*/
+.header-link{ 
+    display: inline-block; 
+    position: absolute; 
+    bottom: 5%; 
+    left: 48%; 
+    background: white; 
+    border-radius: 20%; 
+    border: 2px solid white; transition: all 2s ease-in-out; }
+    .header-link:hover{ 
+    color: white; 
+    border: 2px solid white; 
+    background: black; 
+    outline: 1px solid white; 
+    outline-offset: 1ch; 
+    }
+    /*--- HEADER main-Button animation---*/
+    .header-link { animation:FromBottom; animation-duration: 4s; animation-iteration-count: infinite;}
+    @keyframes FromBottom { 0%{ transform: translateY(-15px); } 50%{ transform: translateY(15px); } 100%{ transform: translateY(-15px);}
+    } /*--- END of main-Button animation---*/  
+    /*-================================  End of header Arrow-down-Button-----*/
+    
+
+/*---SECTION 1--*/
+
+.section-1, .heading-31{
+    margin-top: 2%;
+}
+
+.section-1, .heading-2{
+    margin-bottom: 5%;   
+}
+
+.section-1, .para-1{
+  
+    margin-bottom: 5%;
+}
+.section-1, .card-text, .para-1{
+    color: black;
+}
+.card{
+    width: 20rem;
+}
+.section-1{
+    margin-bottom: 8%;
+    background: #f8f8f6;
+}/*-============END OF SECTION 1--*/
+
+/*---SECTION 2--*/
+
+.section-2, .container-fluid{
+    background-image: url('../img');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-2, .heading-1{
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding-top: 5%;
+    font-family: 'Righteous';
+    color: whitesmoke;
+}
+
+.section-2, .para{
+    font-family: 'Ubuntu';
+    color: whitesmoke;
+    margin-bottom: 7%;
+}
+#masolo{
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+}
+/*-===============END OF SECTION 2-*/
+
+
+/*---SECTION 3--*/
+
+.section-3{
+    margin-top: 6%;
+}
+.icon{
+    color: #00E8E8;
+}/*=======END OF SECTION 3--*/
+
+/*---SECTION 4--*/
+
+.section-4{
+    margin-top: 8%;
+}
+.section-4 .row .col-md-7, .col-md-5{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.section-4 a{
+    color: lightseagreen;
+    font-size: 40px;
+    text-decoration: none;
+}
+.section-4 .para-1{
+    color: white;
+    font-family: 'Roboto condensed';
+    margin-top: 7%;
+    font-size: 23px;
+}/*-============== END OF SECTION 4--*/
+
+/*---Media Qwery for tablets devices--*/
+
+@media screen and (max-width: 768px){
+    .section-1 .card{
+        width: 14rem;
+        align-items: center;
+    }
+    .section-4 .col-md-7 img{
+        width: 350px;
+        
+    }
+}
+ /*---Media Qwery for Telephones devices--*/
+
+@media screen and (max-width: 320px){
+    .site-content .site-title{
+        font-size: 30px;
+        padding-left: 1%;
+    }
+    .site-content .site-title, .title2{
+        text-align: center;
+    }
+    .site-content .site-btn2{
+        display: none;
+    }
+    .buttons .site-btn1{
+        margin-left: 27%;
+    }
+    .section-1 .heading-31, .section-1 .heading-2{
+        font-size: 25px;
+    }
+
+    .section-1 .para-1{
+        font-size: 14px;
+        padding: 5% 5%;
+    }
+    .section-1 .col-md-4{
+        padding: 5%;
+        margin-left: 8%;
+    }
+    .section-1 .card{
+        width: 15rem;
+    }
+    .section-4 .col-md-5{
+        padding: 0% 15%;
+       
+    }
+   
+
+}
+/*  FOOTER */
+.social, i{
+    color: #EF5651;
+}
+  
